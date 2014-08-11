@@ -4,7 +4,7 @@ language: html, css, javascript
 resources: 2
 ---
 
-# Code Challenge - Exploring JQuery Methods
+# Code Challenge - Exploring jQuery Methods
 
 This challenge asks that you work in teams to select buttons to add click events triggering ta variety of jquery methods on corresponding paragraphs and elements in the page.
 
