@@ -1,6 +1,7 @@
 ---
-tags: jquery, selectors, methods
 language: html, css, javascript
+tags: jquery, js, selectors, methods, beginner
+type: lab, challenge
 resources: 2
 ---
 
