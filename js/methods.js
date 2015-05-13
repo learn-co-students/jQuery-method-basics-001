@@ -8,60 +8,104 @@ function clickListeners() {
 			$("#p1").hide();
 		});
 			
-		//show
-		
-				
-		//toggle
-		
+//show
+	$("#b2").click(function(){
+		$("#p1").show();
+	});
 			
-		//css
+	//toggle
+	$("#b3").click(function(){
+		$("#p1").toggle();
+	});
 		
-			
-		//css (multiple property changes)
+	//css
+	$("#b4").click(function(){
+		$("#p2").css("background-color","#ccc");
+	});
 		
-			
-		//html
+	//css (multiple property changes)
+	$("#b5").click(function(){
+		$("#p2").css({"background-color":"blue","color":"white","padding":"5px"});
+	});
 		
-			
-		//prepend
+	//html
+	$("#b6").click(function(){
+		$("#p3").html("change html text to this!");
+	});
 		
-			 
-		//append
-		
-			 
-		//before
-		
-			 
-		//after
-		
-			 
-		//wrap
-		
-			 
-		//addClass
-		
-			 
-		//clone
-		
-			 
-		//fadeOut
-		
-			 
-		//fadeIn
-		
-			  
-		//fadeToggle
-		
-			  
-		//slideUp
-		
-			 
-		//slideDown
-		
-
-		 //slideToggle
+	//prepend
+	$("#b7").click(function(){
+		$("#p3").prepend("<strong>Before </strong>");
+	});
 		 
-			  
-		//animate
+	//append
+	$("#b8").click(function(){
+		$("#p3").append("<strong> After</strong>");
+	});
+		 
+	//before
+	$("#b9").click(function(){
+		$("#p4").before("<h3>Before E</h3>");
+	});
+		 
+	//after
+	$("#b10").click(function(){
+		$("#p4").after("<h3>After E</h3>");
+	});
+		 
+	//wrap
+	$("#b11").click(function(){
+		$("#p5").wrap("<div class='pinky'></div>");
+	});
+		 
+	//addClass
+	$("#b12").click(function(){
+		$("#p5").addClass("texty");
+	});
+		 
+	//clone
+	$("#b13").click(function(){
+		$("li").clone().appendTo("ul");
+	});
+		 
+	//fadeOut
+	$("#b14").click(function(){
+		$("#p6").fadeOut(800);
+	});
+		 
+	//fadeIn
+	$("#b15").click(function(){
+		$("#p6").fadeIn(1000);
+	});
+		  
+	//fadeToggle
+	$("#b16").click(function(){
+		$("#p6").fadeToggle(1000);
+	});
+		  
+	//slideUp
+	$("#b17").click(function(){
+		$(".box-content").slideUp();
+	});
+		 
+	//slideDown
+	$("#b18").click(function(){
+		$(".box-content").slideDown();
+	});
+
+	 //slideToggle
+	 $(".box-header").click(function(){
+		$(".box-content").slideToggle();
+	});
+		  
+	//animate
+	$("#b19").click(function(){
+		$(".box-animate").animate({height:"200px"},500);
+		$(".box-animate").animate({width:"200px"},500);
+		$(".box-animate").animate({height:"50px"},500);
+		$(".box-animate").animate({width:"50px"},500);
+		$(".box-animate").animate({width:"100px"},500);
+		$(".box-animate").animate({height:"100px"},500);
+	});
 		
 }

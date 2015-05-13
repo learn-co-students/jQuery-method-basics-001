@@ -17,6 +17,7 @@ describe('Methods', function() {
 
   describe('#b2 button', function() { 
     it('should show the paragraph when Show Paragraph is clicked', function() {
+      $("#b1").click();
       $("#b2").click();
       selector = $('#p1');
       expect(selector.css('display')).toBe("block");
@@ -133,6 +134,7 @@ describe('Methods', function() {
 
   describe('#b15 button', function() { 
     beforeEach(function(done) {
+      $('#p6').css('display', 'none');
       $("#b15").click();
       selector = $('#p6');
       setTimeout(function() {
@@ -147,15 +149,15 @@ describe('Methods', function() {
 
   describe('#b16 button', function() { 
     beforeEach(function(done) {
-      $("#b14").click();
+      $('#p6').css('display', 'none');
       $("#b16").click();
       selector = $('#p6');
       setTimeout(function() {
         done();
-      }, 2000)
+      }, 1000)
     });
 
-    it('should fade in element when Fade Toggle button is clicked after Fade Out was clicked', function() {
+    it('should fade in element when Fade Toggle button is clicked if it is not visible', function() {
       expect(selector.css('display')).toBe("block");
     });
   });
@@ -176,7 +178,7 @@ describe('Methods', function() {
 
   describe('#b18 button', function() { 
     beforeEach(function(done) {
-      $("#b17").click();
+      $('.box-content').css('display', 'none');
       $("#b18").click();
       selector = $('.box-content');
       setTimeout(function() {
@@ -191,7 +193,7 @@ describe('Methods', function() {
 
   describe('.box-header button', function() { 
     beforeEach(function(done) {
-      $("#b17").click();
+      $('.box-content').css('display', 'none');
       $(".box-header").click();
       selector = $('.box-content');
       setTimeout(function() {
@@ -199,7 +201,7 @@ describe('Methods', function() {
       }, 1000)
     });
 
-    it('should slide down content when Click Me to Toggle button is clicked after Slide Up button had been clicked', function() {
+    it('should slide down content when Click Me to Toggle button is clicked when content is not visible', function() {
       expect(selector.css('display')).toBe("block");
     });
   });
