@@ -1,14 +1,13 @@
 // initialize jQuery command after all page elements load
-	    			
-$(function(){
+function clickListeners() {
 
-//go to: http://api.jquery.com to read about each of the methods below and then set the apropriate button to apply the method to the content below it.
+	//go to: http://api.jquery.com to read about each of the methods below and then set the apropriate button to apply the method to the content below it.
 
 	//hide
 	$("#b1").click(function(){
-		$("#p1").hide(1000);
+		$("#p1").hide();
 	});
-		
+			
 	//show
 	$("#b2").click(function(){
 		$("#p1").show();
@@ -71,17 +70,17 @@ $(function(){
 		 
 	//fadeOut
 	$("#b14").click(function(){
-		$("#p6").fadeOut(1000);
+		$("#p6").fadeOut(900);
 	});
 		 
 	//fadeIn
 	$("#b15").click(function(){
-		$("#p6").fadeIn(1000);
+		$("#p6").fadeIn(900);
 	});
 		  
 	//fadeToggle
 	$("#b16").click(function(){
-		$("#p6").fadeToggle(1000);
+		$("#p6").fadeToggle(900);
 	});
 		  
 	//slideUp
@@ -109,4 +108,4 @@ $(function(){
 		$(".box-animate").animate({height:"100px"},500);
 	});
 		 
-});
+}

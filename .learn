@@ -1,10 +1,7 @@
 languages:
-  - html
-  - css
   - javascript
 tags:
   - jquery
-  - js
   - selectors
   - methods
   - beginner
