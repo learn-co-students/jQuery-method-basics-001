@@ -1,69 +1,67 @@
 // initialize jQuery command after all page elements load
-	    			
-$(function(){
+function clickListeners() {
 
-//go to: http://api.jquery.com to read about each of the methods below and then set the apropriate button to apply the method to the content below it.
+		//go to: http://api.jquery.com to read about each of the methods below and then set the apropriate button to apply the method to the content below it.
 
-	//hide
-	$("#b1").click(function(){
-		$("#p1").hide(1000);
-	});
-		
-	//show
-	
+		//hide
+		$("#b1").click(function(){
+			$("#p1").hide();
+		});
 			
-	//toggle
-	
+		//show
 		
-	//css
-	
+				
+		//toggle
 		
-	//css (multiple property changes)
-	
+			
+		//css
 		
-	//html
-	
+			
+		//css (multiple property changes)
 		
-	//prepend
-	
-		 
-	//append
-	
-		 
-	//before
-	
-		 
-	//after
-	
-		 
-	//wrap
-	
-		 
-	//addClass
-	
-		 
-	//clone
-	
-		 
-	//fadeOut
-	
-		 
-	//fadeIn
-	
-		  
-	//fadeToggle
-	
-		  
-	//slideUp
-	
-		 
-	//slideDown
-	
+			
+		//html
+		
+			
+		//prepend
+		
+			 
+		//append
+		
+			 
+		//before
+		
+			 
+		//after
+		
+			 
+		//wrap
+		
+			 
+		//addClass
+		
+			 
+		//clone
+		
+			 
+		//fadeOut
+		
+			 
+		//fadeIn
+		
+			  
+		//fadeToggle
+		
+			  
+		//slideUp
+		
+			 
+		//slideDown
+		
 
-	 //slideToggle
-	 
-		  
-	//animate
-	
+		 //slideToggle
 		 
-});
+			  
+		//animate
+		
+}
